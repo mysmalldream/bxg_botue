@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>博学谷项目实战</title>
+	<link rel="shortcut icon" href="mineicon.ico" />
+	<!--引入网站菜单栏图标-->
+	<link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+	<script src="./lib/jquery-3.2.0.js"></script>
+	<script src="./bootstrap/dist/lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/base.css" />
+	<!-- 页面基础样式 -->
+	<link rel="stylesheet" href="css/index.css" />
+	<script src="./js/teachers_manage.js"></script>
+</head>
+
+<body>
+	<main>
+		<sidebar>
+			<div class="avatar img-circle">
+				<img src="./images/123.jpg">
+			</div>
+			<h4>mySmallDream</h4>
+			<ul class="list-unstyled ullis">
+				<li>
+					<a href="##" class="">
+                        <i class="fa fa-dashboard"></i>
+                        仪表盘
+                    </a>
+				</li>
+				<li>
+					<a href="##">
+                        <i class="fa fa-mortar-board"></i>
+                        讲师管理
+                    </a>
+				</li>
+				<li>
+					<a href="##">
+                        <i class="fa fa-indent"></i>
+                        分类管理
+                    </a>
+				</li>
+				<li>
+					<a href="javascript:;" id="slide">
+                        <i class="fa fa-th"></i>
+                        课程管理
+                        <i class="arrow fa fa-angle-right"></i>
+                    </a>
+					<ul class="list-unstyled" id="toggle">
+						<li>
+							<a href="###">
+                                 课程添加
+                            </a>
+						</li>
+						<li>
+							<a href="###">
+                                课程列表
+                            </a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</sidebar>
+		<content>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<div class="navbar-header">
+							<a href="javascript:;" class="navbar-brand">
+                   			 	<span class="fa fa-navicon"></span>
+                			</a>
+						</div>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"> <i class="fa fa-user"></i>个人中心</a></li>
+						<li><a href="#"><i class="fa fa-sign-out"></i>退出</a></li>
+						<li>
+							<a href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+
+			<div class="teachers">
+				<ol class="breadcrumb">
+					<li><a href="#">讲师管理</a></li>
+					<li><a href="#">讲师列表</a></li>
+				</ol>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="btn-group pull-right">
+							<button type="button" class="btn btn-success ">
+							添加讲师 
+						</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="table-responsive teacher_listst">
+					<table class="table table-hover table-bordered">
+						<caption>
+							<form class="form-inline" role="">
+								<div class="input-group">
+									<input type="text" class="form-control input-sm">
+									<span class="input-group-btn">
+                                    <button class="btn btn-success btn-sm">搜索</button>
+                                </span>
+								</div>
+							</form>
+						</caption>
+						<thead>
+							<tr>
+								<th>
+									编号
+								</th>
+								<th>
+									姓名
+								</th>
+								<th>
+									昵称
+								</th>
+								<th>
+									性别
+								</th>
+								<th>
+									手机号码
+								</th>
+								<th>
+									出生日期
+								</th>
+								<th>
+									邮箱
+								</th>
+								<th>
+									入职日期
+								</th>
+								<th>
+									操作
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="active">
+								<td>
+									Tanmay
+								</td>
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									Tanmay
+								</td>
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">查看</a>
+									</button>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">编辑</a>
+									</button>
+									<button type="button" class="btn btn-warning btn-xs">
+										<a href="javascript:;">注销</a>
+									</button>
+								</td>
+							</tr>
+							<tr class="">
+								<td>
+									Sachin
+								</td>
+								<td>
+									Mumbai
+								</td>
+								<td>
+									400003
+								</td>
+								<td>
+									Tanmay
+								</td>
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">查看</a>
+									</button>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">编辑</a>
+									</button>
+									<button type="button" class="btn btn-warning btn-xs">
+										<a href="javascript:;">注销</a>
+									</button>
+								</td>
+							</tr>
+							<tr class="active">
+								<td>
+									Tanmay
+								</td>
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									Tanmay
+								</td>
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">查看</a>
+									</button>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">编辑</a>
+									</button>
+									<button type="button" class="btn btn-warning btn-xs">
+										<a href="javascript:;">注销</a>
+									</button>
+								</td>
+							</tr>
+							<tr class="">
+								<td>
+									Sachin
+								</td>
+								<td>
+									Mumbai
+								</td>
+								<td>
+									400003
+								</td>
+								<td>
+									Tanmay
+								</td>
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">查看</a>
+									</button>
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">编辑</a>
+									</button>
+									<button type="button" class="btn btn-warning btn-xs">
+										<a href="javascript:;">注销</a>
+									</button>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+
+				<nav style="text-align: center">
+					<ul class="pagination">
+						<li class="disabled"><a href="#">«</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">»</a></li>
+					</ul>
+				</nav>
+			</div>
+		</content>
+	</main>
+</body>
+
+</html>

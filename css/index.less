@@ -94,45 +94,39 @@ content {
             }
         }
     }
-    .content_right {
-        min-width: 600px;
-        margin: 0 auto;
-        >.col-xs-3 {
-            margin-left: 20px;
-            width: 20%;
-            .cell {
-                padding: 20px 35px;
-                border-radius: 5px;
-                line-height: 30px;
-                color: white;
-                text-align: center;
-                height: 100%;
-                i {
-                    font-size: 50px;
-                    float: left;
+    .teachers {
+        margin: 0 15px;
+        font-size: 16px;
+        .breadcrumb {
+            background-color: white;
+        }
+        .teacher_listst {
+            background-color: white;
+            text-align: center;
+            tr {
+                a {
+                    color: white;
                 }
             }
-            .money {
-                background-color: #FC8675;
-            }
-            .th {
-                background-color: #5AB6DF;
-            }
-            .user {
-                background-color: #65CEA7;
-            }
-            .eye {
-                background-color: #EBC85E;
+            thead {
+                tr {
+                    th {
+                        text-align: center;
+                        .btn-xs {
+                            a {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
             }
         }
-    }
-    .echarts {
-        background-color: white;
-        margin: 30px 15px 25px 15px;
-        #main {
-            padding: 30px;
-            height: 440px;
-            width: 800px;
-        }
-    }
+    } // .page{     //分页
+    //     margin: 0 auto;
+    //     display: flex;
+    //     .pagination{
+    //         justify-content: center;
+    //         align-content: space-around;
+    //     }
+    // }
 }

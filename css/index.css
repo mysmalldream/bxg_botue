@@ -78,44 +78,23 @@ content .navbar-default .fa-navicon {
 content .navbar-default .navbar-nav > li > a {
   color: #337AB7;
 }
-content .content_right {
-  min-width: 600px;
-  margin: 0 auto;
+content .teachers {
+  margin: 0 15px;
+  font-size: 16px;
 }
-content .content_right > .col-xs-3 {
-  margin-left: 20px;
-  width: 20%;
-}
-content .content_right > .col-xs-3 .cell {
-  padding: 20px 35px;
-  border-radius: 5px;
-  line-height: 30px;
-  color: white;
-  text-align: center;
-  height: 100%;
-}
-content .content_right > .col-xs-3 .cell i {
-  font-size: 50px;
-  float: left;
-}
-content .content_right > .col-xs-3 .money {
-  background-color: #FC8675;
-}
-content .content_right > .col-xs-3 .th {
-  background-color: #5AB6DF;
-}
-content .content_right > .col-xs-3 .user {
-  background-color: #65CEA7;
-}
-content .content_right > .col-xs-3 .eye {
-  background-color: #EBC85E;
-}
-content .echarts {
+content .teachers .breadcrumb {
   background-color: white;
-  margin: 30px 15px 25px 15px;
 }
-content .echarts #main {
-  padding: 30px;
-  height: 440px;
-  width: 800px;
+content .teachers .teacher_listst {
+  background-color: white;
+  text-align: center;
+}
+content .teachers .teacher_listst tr a {
+  color: white;
+}
+content .teachers .teacher_listst thead tr th {
+  text-align: center;
+}
+content .teachers .teacher_listst thead tr th .btn-xs a {
+  text-decoration: none;
 }
