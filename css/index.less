@@ -7,7 +7,7 @@ main {
 sidebar {
     flex: 0 0 180px;
     height: 100%;
-    background-color: #243443;
+    background-color: #2F4050;
     position: fixed;
     left: 0;
     top: 0;
@@ -35,16 +35,37 @@ sidebar {
         li {
             text-align: left;
             text-indent: 15px;
-            font-size: 12px;
+            font-size: 14px;
             display: list-item;
             line-height: 30px;
             a {
-                color: white;
+                color: #A9B0C2;
+                display: block;
                 text-decoration: none;
             }
         }
-        >li:hover {
-            background-color: blue;
+        #toggle {
+            >li {
+                >a {
+                    display: block;
+                    text-indent: 4em;
+                    width: 100%;
+                }
+            }
+        }
+        >li:nth-child(-n+3):hover {
+            a {
+                color: white;
+                background-color: #243443;
+            }
+        }
+        >li:nth-child(-n+4) {
+            #slide:hover {
+                background-color: #243443;
+            }
+        }
+        >ullis {
+            background-color: #243443;
         }
     }
 }

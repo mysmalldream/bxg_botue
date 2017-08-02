@@ -5,7 +5,7 @@ main {
 sidebar {
   flex: 0 0 180px;
   height: 100%;
-  background-color: #243443;
+  background-color: #2F4050;
   position: fixed;
   left: 0;
   top: 0;
@@ -35,16 +35,29 @@ sidebar .list-unstyled {
 sidebar .list-unstyled li {
   text-align: left;
   text-indent: 15px;
-  font-size: 12px;
+  font-size: 14px;
   display: list-item;
   line-height: 30px;
 }
 sidebar .list-unstyled li a {
-  color: white;
+  color: #A9B0C2;
+  display: block;
   text-decoration: none;
 }
-sidebar .list-unstyled > li:hover {
-  background-color: blue;
+sidebar .list-unstyled #toggle > li > a {
+  display: block;
+  text-indent: 4em;
+  width: 100%;
+}
+sidebar .list-unstyled > li:nth-child(-n+3):hover a {
+  color: white;
+  background-color: #243443;
+}
+sidebar .list-unstyled > li:nth-child(-n+4) #slide:hover {
+  background-color: #243443;
+}
+sidebar .list-unstyled > ullis {
+  background-color: #243443;
 }
 /*右侧内容部分*/
 content {
