@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>博学谷项目实战</title>
+	<link rel="shortcut icon" href="mineicon.ico" />
+	<!--引入网站菜单栏图标-->
+	<link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+	<script src="./lib/jquery-3.2.0.js"></script>
+	<script src="./bootstrap/dist/lib/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/base.css" />
+	<!-- 页面基础样式 -->
+	<link rel="stylesheet" href="css/index.css" />
+	<script src="./js/teachers_manage.js"></script>
+</head>
+
+<body>
+	<main>
+		<sidebar>
+			<div class="avatar img-circle">
+				<img src="./images/123.jpg">
+			</div>
+			<h4>mySmallDream</h4>
+			<ul class="list-unstyled ullis">
+				<li>
+					<a href="##" class="">
+                        <i class="fa fa-dashboard"></i>
+                        仪表盘
+                    </a>
+				</li>
+				<li>
+					<a href="##">
+                        <i class="fa fa-mortar-board"></i>
+                        讲师管理
+                    </a>
+				</li>
+				<li>
+					<a href="##">
+                        <i class="fa fa-indent"></i>
+                        分类管理
+                    </a>
+				</li>
+				<li>
+					<a href="javascript:;" id="slide">
+                        <i class="fa fa-th"></i>
+                        课程管理
+                        <i class="arrow fa fa-angle-right"></i>
+                    </a>
+					<ul class="list-unstyled" id="toggle">
+						<li>
+							<a href="###">
+                                 课程添加
+                            </a>
+						</li>
+						<li>
+							<a href="###">
+                                课程列表
+                            </a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</sidebar>
+		<content>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<div class="navbar-header">
+							<a href="javascript:;" class="navbar-brand">
+                   			 	<span class="fa fa-navicon"></span>
+                			</a>
+						</div>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"> <i class="fa fa-user"></i>个人中心</a></li>
+						<li><a href="#"><i class="fa fa-sign-out"></i>退出</a></li>
+						<li>
+							<a href="javascript:;">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+
+			<div class="teachers">
+				<ol class="breadcrumb">
+					<li><a href="#">课程管理</a></li>
+					<li><a href="#">课程分类</a></li>
+				</ol>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="btn-group pull-right">
+							<button type="button" class="btn btn-success ">
+							添加分类
+						</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="table-responsive teacher_listst">
+					<table class="table table-hover table-bordered">
+						<thead>
+							<tr>
+								<th>
+									分类名称
+								</th>
+								<th>
+									课程数量
+								</th>
+								<th>
+									是否显示
+								</th>
+								<th>
+									排序
+								</th>
+								<th>
+									操作
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="active">
+								
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">编辑</a>
+									</button>
+									
+								</td>
+							</tr>
+							<tr class="">
+								
+								<td>
+									Bangalore
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									560001
+								</td>
+								<td>
+									
+									<button type="button" class="btn btn-info btn-xs">
+										<a href="javascript:;">编辑</a>
+									</button>
+									
+								</td>
+							</tr>
+							
+
+						</tbody>
+					</table>
+				</div>
+
+				<nav style="text-align: center">
+					<ul class="pagination">
+						<li class="disabled"><a href="#">«</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">»</a></li>
+					</ul>
+				</nav>
+			</div>
+		</content>
+	</main>
+</body>
+
+</html>
