@@ -76,6 +76,7 @@ sidebar {
 content {
     background-color: #F4F6F8;
     height: 100%;
+    width: 800px;
     flex: 1;
     padding: 0px 0 30px 180px;
     .navbar-default {
@@ -91,6 +92,47 @@ content {
                     color: #337AB7;
                 }
             }
+        }
+    }
+    .content_right {
+        min-width: 600px;
+        margin: 0 auto;
+        >.col-xs-3 {
+            margin-left: 20px;
+            width: 20%;
+            .cell {
+                padding: 20px 35px;
+                border-radius: 5px;
+                line-height: 30px;
+                color: white;
+                text-align: center;
+                height: 100%;
+                i {
+                    font-size: 50px;
+                    float: left;
+                }
+            }
+            .money {
+                background-color: #FC8675;
+            }
+            .th {
+                background-color: #5AB6DF;
+            }
+            .user {
+                background-color: #65CEA7;
+            }
+            .eye {
+                background-color: #EBC85E;
+            }
+        }
+    }
+    .echarts {
+        background-color: white;
+        margin: 30px 15px 25px 15px;
+        #main {
+            padding: 30px;
+            height: 440px;
+            width: 800px;
         }
     }
 }

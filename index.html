@@ -8,27 +8,15 @@
 	<!--引入网站菜单栏图标-->
 	<link rel="stylesheet" href="./bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-	<script src="./js/jquery-3.2.0.js"></script>
-	<script src="./bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="./lib/jquery-3.2.0.js"></script>
+	<script src="./bootstrap/dist/lib/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/base.css" />
 	<!-- 页面基础样式 -->
 	<link rel="stylesheet" href="css/index.css" />
+	<!-- ECharts单文件引入 -->
+	<script src="./lib/echarts.js"></script>
+	<script src="./js/index.js"></script>
 </head>
-<script>
-	$(function () {
-		$("#toggle").css('display', 'none');
-		$("#slide").click(function () {
-			$("#toggle").slideToggle(200);
-			$('.ullis>li').addClass('.ullis')
-		})
-
-		$(".ullis li a").click(function () {
-			$(this).css("backgroundColor", "#243443");
-			$(this).parent().siblings().children().css("backgroundColor", "#2F4050");
-		})
-	})
-
-</script>
 
 <body>
 	<main>
@@ -103,6 +91,41 @@
 				</div>
 				<!-- /.container-fluid -->
 			</nav>
+			<div class="row content_right">
+				<div class="col-xs-3 ">
+					<div class="cell money">
+						<i class="fa fa-money"></i>
+						<span>我的收入</span>
+						<h5>￥11.11</h5>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="cell th">
+						<i class="fa fa-th"></i>
+						<span>课程数量</span>
+						<h5>12</h5>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="cell user">
+						<i class="fa fa-user"></i>
+						<span>用户数量</span>
+						<h5>236</h5>
+					</div>
+				</div>
+				<div class="col-xs-3">
+					<div class="cell eye">
+						<i class="fa fa-eye"></i>
+						<span>浏览量</span>
+						<h5>22435</h5>
+					</div>
+				</div>
+			</div>
+			<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+			<div class="echarts">
+				<div id="main"></div>
+			</div>
+
 		</content>
 	</main>
 </body>
