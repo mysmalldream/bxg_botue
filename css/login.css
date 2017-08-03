@@ -1,0 +1,17 @@
+/*登录模态框*/
+body {
+  background-color: #2F4050;
+}
+.avatar {
+  left: 50%;
+  top: -60px;
+  width: 140px;
+  height: 140px;
+  border: 10px solid #FFF;
+  margin-left: 200px;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px #CCC;
+  background-color: pink;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
